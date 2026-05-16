@@ -1,6 +1,6 @@
-# Author: Reilly Bova
-# Date:   30 September 2018
-# File:   contract.py
+# Author: Santiago Johnson
+# Date:   13 May 20266
+# File:   bidding.py
 # About:  Implements a "contract" from Spades. It holds the bids of each player,
 #         produces string representations of them, and scores the results of a round
 
