@@ -1,7 +1,7 @@
 # Author: Santiago Johnson
 # Date:   13 May 2026
 # File:   gameplay.py
-# About:  Implements a "game" for Spades. Call the constructor, with the winning value,
+# About:  Implements a "game" for Superpowered Spades. Call the constructor, with the winning value,
 #         set pins, and then invoke run to simulate a game of Spades.
 
 import getpass
