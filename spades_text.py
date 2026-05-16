@@ -68,7 +68,7 @@ def show_rules(msg, type):
              "Once the lead card is set, play continues around the group (alternating teams), until all three (3) other players have played. At this point, if there were any spades "
              "played in the 4-card hand, the hand is awarded to whichever player played the highest-ordered spade; otherwise, the hand is awarded to whichever player played the "
              "highest-ordered card that matches the suite of the lead card. Note that when playing a card, a player must always match the winning suite (spade or lead) thus-far of a hand; "
-             "if a player is not able to do so, they are free to play a card from whichever suit they choose, including a spade (this is how spades are introduced into a round).
+             "if a player is not able to do so, they are free to play a card from whichever suit they choose, including a spade (this is how spades are introduced into a round)."
              "Unlike traditional spades, in this version, every spade has its own unique ability."
              "These abilities can range from viewing a person's hand, stealing an extra book, or trading a card from someone's hand."
              "In order to activate a spade's ability, it has to be the card that wins a round."
