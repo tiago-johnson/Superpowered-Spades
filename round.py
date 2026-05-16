@@ -1,5 +1,5 @@
-# Author: Reilly Bova
-# Date:   30 September 2018
+# Author: Santiago Johnson
+# Date:   13 May 2026
 # File:   round.py
 # About:  Implements a "round" object in a game of Spades. Call the constructor,
 #         and the rest of the round will be simulated until the round ends.
@@ -274,6 +274,9 @@ class Round:
         for i in range(13):
             lead_player, best_card = self.play_trick(ordering)
             self.winnings[lead_player] += 1
+
+            activate_spade_ability(best_card, lead_player, self)
+
             msg = (f"Player {lead_player} won the hand with {best_card.order}{best_card.suite}! Press any key to continue...")
             handle_input(msg, WIPE)
 
