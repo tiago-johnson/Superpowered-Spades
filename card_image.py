@@ -1,6 +1,6 @@
-# Author: Reilly Bova
-# Date:   30 September 2018
-# File:   card.py
+# Author: Santiago Johnson
+# Date:   13 May 2026
+# File:   card_image.py
 # About:  Implements a playing card
 
 class Card:
