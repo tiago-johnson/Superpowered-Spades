@@ -38,6 +38,9 @@ def activate_spade_ability(card, winner, round_state):
     elif rank == 2:
       two_ability(winner, round_state)
 
+# -----------------------------------------------------------------------------
+# Helper code functions
+# -----------------------------------------------------------------------------
 
 def get_partner(player):
     """
