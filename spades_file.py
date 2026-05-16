@@ -1,6 +1,6 @@
-# Author: Reilly Bova
-# Date:   30 September 2018
-# File:   spades.py
+# Author: Santiago Johnson
+# Date:   13 May 2026
+# File:   spades_file.py
 # About:  The main file for my "Spades" python program for the terminal
 
 import os
@@ -11,7 +11,7 @@ from spades_utils import *
 def welcome():
     os.system("clear")
     print(HEADER)
-    hello_msg = ("Welcome to a game of Spades! This game is for four (4) players! At any time, you may enter 'q' to quit and 'r' to read the rules.\n\n"
+    hello_msg = ("Welcome to a game of Superpowered Spades! This game is for four (4) players! At any time, you may enter 'q' to quit and 'r' to read the rules.\n\n"
                  "Please note that you must press the 'Enter' key after typing your inputs in order to submit it to the game (this requirement prevents accidental input/keystrokes)\n\n"
                  "Press any (other) key to continue! We recommend you read the rules now if you are new to Spades!")
     handle_input(hello_msg, WIPE)
