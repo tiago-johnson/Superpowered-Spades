@@ -1,6 +1,6 @@
 # Author: Santiago Johnson
 # Date:   16 May 2026
-# File:   Spades Text
+# File:   spades_text.py
 # About:  A collection of utility functions for my "Spades" Python program
 
 import os
@@ -62,13 +62,18 @@ def show_rules(msg, type):
              "special scoring rules are applied. For more on scoring, see Section 4 — Scoring.\n\n"
 
              "(3 — Gameplay) After the bidding stage, gameplay begins. During each hand of a round, players play exactly one (1) of their 13 cards. "
-             "In Spades, there are two classes of suites: in the lower class are clubs (♣), hearts (♥), and diamonds (♦); and up above are the \"trump\" spades (♠). "
+             "In Spades, there are two classes of suits: in the lower class are clubs (♣), hearts (♥), and diamonds (♦); and up above are the \"trump\" spades (♠). "
              "Rounds begin with the player who won the previous round (or, in the case of the round's start, the player who made the first bid). The card put down by "
              "the leading player of a hand is called the \"lead\" card. This lead card may not be a spade unless a spade has already been played in the round (through other means). "
              "Once the lead card is set, play continues around the group (alternating teams), until all three (3) other players have played. At this point, if there were any spades "
              "played in the 4-card hand, the hand is awarded to whichever player played the highest-ordered spade; otherwise, the hand is awarded to whichever player played the "
              "highest-ordered card that matches the suite of the lead card. Note that when playing a card, a player must always match the winning suite (spade or lead) thus-far of a hand; "
-             "if a player is not able to do so, they are free to play a card from whichever suite they choose, including a spade (this is how spades are introduced into a round).\n\n"
+             "if a player is not able to do so, they are free to play a card from whichever suit they choose, including a spade (this is how spades are introduced into a round).
+             "Unlike traditional spades, in this version, every spade has its own unique ability."
+             "These abilities can range from viewing a person's hand, stealing an extra book, or trading a card from someone's hand."
+             "In order to activate a spade's ability, it has to be the card that wins a round."
+             "This twist to the game adds another layer of strategy to this fun and family-friendly activity.\n\n"
+             
 
              "(4 — Scoring) Once all 13 hands have been played, scoring begins. For teams whose contract contains neither blinds (when a player bets before looking at their cards) nor nils (when a player bets they will "
              "win zero (0) hands), they will lose 10 times their contract number (in points) if they won fewer hands than promised in their contract; if they won at least as many hands as stated, they get 10 points per hand up until the "
@@ -87,10 +92,10 @@ def show_rules(msg, type):
     input(rules)
     if (type == WIPE):
         wipe_screen()
-    # "Go back" to the original prompt (and hope the user doesn't descend much further into the call stack
+    # "Go back" to the original prompt and hope the user doesn't descend much further into the call stack
     return handle_input(msg, type)
 
-# Handle getting prompt from user (can wipe screen, enfore Y/N answer, and check for special responses)
+# Handle getting prompt from user (can wipe screen, enforce Y/N answer, and check for special responses)
 def handle_input(msg, type=(CONTINUE)):
     response = input(msg + "\n>>>")
     if (response == QUIT):
@@ -112,6 +117,5 @@ def handle_input(msg, type=(CONTINUE)):
         return response
 
 # Wipe terminal screen (hard erase)
-# TODO: This is CRAZY SLOW — is there a more efficient way without potentially revealing info written to the terminal previously?
 def wipe_screen():
     os.system("reset")
