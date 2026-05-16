@@ -1,7 +1,7 @@
-# Author: Reilly Bova
-# Date:   30 September 2018
-# File:   spades_utils.py
-# About:  A collection of utility functions for my "Spades" python program
+# Author: Santiago Johnson
+# Date:   16 May 2026
+# File:   Spades Text
+# About:  A collection of utility functions for my "Spades" Python program
 
 import os
 
