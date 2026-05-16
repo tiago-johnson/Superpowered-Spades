@@ -9,6 +9,7 @@ import getpass
 from card import Card
 from contract import Contract
 from spades_utils import *
+from abilities import activate_spade_abilities
 
 class Round:
     def __init__(self, num, players, pins, game_header):
